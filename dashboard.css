@@ -1,0 +1,137 @@
+.nominee-table {
+    font-size: 12px;
+}
+
+table,
+thead,
+tbody,
+th,
+td,
+tr {
+    display: block;
+}
+
+thead tr {
+    display: none;
+}
+
+tr {
+    border: 1px solid #ccc;
+}
+
+td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.table td {
+    padding-left: 40%;
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    overflow-wrap: break-word;
+}
+
+td:nth-of-type(1):before {
+    content: "S.No.";
+}
+
+td:nth-of-type(2):before {
+    content: "Name";
+}
+
+td:nth-of-type(3):before {
+    content: "Nominated By";
+}
+
+td:nth-of-type(4):before {
+    content: "Assessment Status";
+}
+
+td:nth-of-type(5):before {
+    content: "View Details";
+}
+
+@media (min-width: 768px) {
+    td {
+        display: table-cell;
+    }
+    thead{
+        
+        display: table-header-group;
+        
+    }
+    th{
+        
+        display: table-header-group;
+        display: inline-flex;
+        
+    }
+    thead tr {
+        display: table-row;
+    }
+    .table td {
+        padding-left: 5%;
+    }
+    tr {
+        min-height: 40px;
+        padding-top: 10px;
+    }
+    td:nth-of-type(1):before,
+    td:nth-of-type(2):before,
+    td:nth-of-type(3):before,
+    td:nth-of-type(4):before,
+    td:nth-of-type(5):before {
+        display: none;
+    }
+    .serial-no{
+        width: 5%;
+    }
+    .nominee-name{
+        width: 30%;
+    }
+    .nominated-by{
+        width: 30%;
+    }
+    .assessment-status{
+        width: 25%;
+    }
+    .view-details{
+        width: 10%;
+    }
+} 
+ 
+
+
+.focus {
+    background-color: #ff00ff;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .pageNumber {
+    padding: 2px;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
